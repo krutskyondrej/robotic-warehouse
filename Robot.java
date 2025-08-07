@@ -1,9 +1,8 @@
-package model;
-
 /*
  * Main application class Robot
  * 
  * @author Ondrej Krutsky
+ * Date 2025-08-07
  */
 
 public class Robot {
@@ -16,13 +15,13 @@ public class Robot {
 	private String location;
 	
 	/*
-	 * Constructor
+	 * Constructor Robot
 	 */
 	public Robot(String id, String name) {
 		this.id = id;
 		this.name = name;
-		this.status = 'IDLE';
-		this.batteryLevel = 100;
+		this.status = status;
+		this.batteryLevel = batteryLevel;
 	}
 	
 	public String getStatus() {
@@ -35,9 +34,10 @@ public class Robot {
 	
 	public void assignTask(String taskID) {
 		this.currentTaks = taskId;
-		this.status = 'WORKING';
+		this.status = status;
 	}
 	
 	
 
 }
+
